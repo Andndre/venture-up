@@ -4,6 +4,7 @@
 
 :root {
   color: white;
+  --gradient: linear-gradient(95.89deg, #35f3ff -14.02%, #d322ff 112.13%);
 }
 
 h1 {
@@ -12,4 +13,30 @@ h1 {
 
 h2 {
   @apply text-3xl font-bold;
+}
+
+h3 {
+  @apply text-2xl font-bold;
+}
+
+p,
+li,
+a {
+  @apply md:text-xl;
+}
+
+ol {
+  counter-reset: item;
+}
+ol li {
+  display: block;
+}
+ol li:before {
+  content: counter(item) ". ";
+  counter-increment: item;
+  background: var(--gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
 }
