@@ -63,7 +63,7 @@ class AuthenticateController extends Controller
                 'success' => true,
                 'message' => 'Login Successfully',
                 'data' => Auth::user()
-            ], 200);
+            ], 200)->cookie('user_id', Auth::id())->cookie('user_name', Auth::user()->name)->cookie('user_email', Auth::user()->email);
         }
         else {
             return response()->json([
