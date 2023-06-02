@@ -73,7 +73,7 @@
         <img class="mx-auto w-full px-4 max-w-2xl" src="{{ asset('assets/riset.svg') }}" alt="grafik riset">
     </section>
     {{-- End Riset --}}
-
+    <div class="py-4"></div>
     {{-- Kenapa --}}
     <section data-aos="fade-up" id="kenapa" class="min-h-screen">
         <div class="mx-auto px-4 container max-w-2xl text-center mt-2 space-y-3">
@@ -95,6 +95,8 @@
         </div>
     </section>
     {{-- End Kenapa --}}
+
+    <div class="py-16 md:py-8 lg:py-4"></div>
 
     {{-- Materi Utama --}}
     <section data-aos="fade-up" id="kenapa" class="min-h-screen">
@@ -122,4 +124,5 @@
         </div>
     </section>
     {{-- End Materi Utama --}}
+    <div class="py-8"></div>
 @endsection
